@@ -440,10 +440,21 @@ section {
 }
 
 /* Courses Section */
-.courses-grid {
+/* .courses-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
     gap: 30px;
+} */
+@media (min-width: 992px) {
+    .courses-grid {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 30px;
+    }
+
+    .course-item {
+        width: 100% !important;
+    }
 }
 
 .course-item {
